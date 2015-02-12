@@ -1,4 +1,12 @@
-function todo.config.load () {
+function todo.config.path () {
+  if ! b.is_set? 'todo.config.file'; then
+    _todo.config.load
+  fi;
+
+  b.get 'todo.config.file'
+}
+
+function _todo.config.load () {
   b.unset 'todo.config'
 
   if b.path.file? "$1"; then

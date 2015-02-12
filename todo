@@ -1,10 +1,7 @@
-#!/usr/bin/env bash
-source '../bangsh/src/bang.sh'
+#!/usr/bin/env bang run
 
-b.module.require task
-b.module.require path
 b.module.require config
 
-todo.config.load ~/.todorc
-
-[ -n "$1" ] && b.task.run "$@"
+if [ -n "$1" ]; then
+  b.task.run "$@"
+fi

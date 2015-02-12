@@ -1,5 +1,5 @@
 function btask.del.run () {
-  local num="$1" filepath=$(b.get 'todo.config.file')
+  local num="$1" filepath=$(todo.config.path)
 
   sed -i '' "${num}d" "$filepath"
 }

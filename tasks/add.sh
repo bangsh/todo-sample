@@ -1,5 +1,5 @@
 function btask.add.run () {
-  local filename="$(b.get 'todo.config.file')"
+  local filename="$(todo.config.path)"
 
   echo "$1" >> "$filename"
 }

@@ -1,5 +1,5 @@
 function btask.list.run () {
-  local filename="$(b.get 'todo.config.file')"
+  local filename="$(todo.config.path)"
 
   cat -n "$filename"
 }
