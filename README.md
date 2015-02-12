@@ -1,12 +1,12 @@
 # TODO
 
-This is a sample application that runs with [bang.sh](https://github.com/bellthoven/bangsh).
+This is a sample application that runs with [bang.sh](https://github.com/bangsh/bangsh).
 To run this application, you need the framework too.
 
 ```
 cd ~/Projects
-git clone https://github.com/bellthoven/bangsh
-git clone https://github.com/bellthoven/todo-sample
+git clone https://github.com/bangsh/bangsh
+git clone https://github.com/bangsh/todo-sample
 cd todo-sample
 ```
 
