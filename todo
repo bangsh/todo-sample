@@ -3,5 +3,7 @@
 b.module.require config
 
 if [ -n "$1" ]; then
+  todo.config.load
+
   b.task.run "$@"
 fi
