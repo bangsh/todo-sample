@@ -12,6 +12,7 @@ function b.test.load_configuration_from_file () {
 }
 
 function b.test.load_default_configurations () {
+  b.unittest.assert_equal "" "$(todo.config.path)"
   todo.config.load "this_file_do_not_exist"
   b.unittest.assert_equal "$HOME/.todorc" "$(todo.config.path)"
 }
